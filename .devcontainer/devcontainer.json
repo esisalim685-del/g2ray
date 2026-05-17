@@ -1,5 +1,5 @@
 {
-  "name": "echo-path-7662b3",
+  "name": "echo-net-f41976",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
@@ -15,9 +15,10 @@
   "postAttachCommand": "gh codespace ports visibility 443:public -c $CODESPACE_NAME && bash /usr/local/bin/start.sh",
   "portsAttributes": {
     "443": {
-      "label": "echo-path-7662b3",
+      "label": "echo-net-f41976",
       "protocol": "http",
-      "onAutoForward": "silent"
+      "onAutoForward": "silent",
+	  "visibility": "public"
     }
   },
   "forwardPorts": [
